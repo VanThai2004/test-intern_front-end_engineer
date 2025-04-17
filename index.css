@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0a1f24;
+  color: #fff;
+}
+
+header {
+  background-color: #d7ff99;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons i {
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: url("https://via.placeholder.com/800x400") no-repeat center/cover;
+  height: 500px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d7ff99;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.mega-menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  display: none;
+  padding: 30px 40px;
+  color: #000;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:hover .mega-menu {
+  display: flex;
+}
+
+.mega-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.mega-images {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+}
+
+.mega-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.mega-images div {
+  text-align: center;
+  font-size: 13px;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
